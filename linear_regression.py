@@ -53,7 +53,7 @@ def y_int(x_data,y_data):
     correlation=pcc(x_data,y_data)
     return mean(y_data)-slope(x_data,y_data)*mean(x_data)
 
-def linear_regression_formula(x_data,y_data):
+def formula(x_data,y_data):
    '''
    y=a+bx (y=b+mx or mx+b  (a=b,b=m))
    y=y-intercept + slope * x
@@ -64,7 +64,7 @@ def linear_regression_formula(x_data,y_data):
       return f'y={slope_:.3e} x {y_inter:.3e}'.replace(' -',' - ')
    return f'y={slope_:.3e} x + {y_inter:.3e}'
 
-def linear_regression_value(x_data,y_data,x_value):
+def value(x_data,y_data,x_value):
    '''
    y=a+bx (y=b+mx or mx+b  (a=b,b=m))
    y=y-intercept + slope * x
