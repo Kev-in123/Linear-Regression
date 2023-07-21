@@ -58,7 +58,6 @@ def linear_regression_formula(x_data,y_data):
    y=a+bx (y=b+mx or mx+b  (a=b,b=m))
    y=y-intercept + slope * x
    '''
-
    y_inter=y_int(x_data,y_data)
    slope_=slope(x_data,y_data)
    if str(y_inter)[0]=='-':
@@ -70,7 +69,6 @@ def linear_regression_value(x_data,y_data,x_value):
    y=a+bx (y=b+mx or mx+b  (a=b,b=m))
    y=y-intercept + slope * x
    '''
-
    y_inter=y_int(x_data,y_data)
    slope_=slope(x_data,y_data)
    return y_inter + slope_*x_value
